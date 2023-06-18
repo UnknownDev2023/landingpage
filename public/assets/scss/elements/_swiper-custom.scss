@@ -1,0 +1,57 @@
+// custom swiper css
+
+// .mySwipers{
+//     &.swiper {
+//         width: 300px;
+//         height: 300px;
+//         position: absolute;
+//         left: 50%;
+//         top: 50%;
+//         margin-left: -150px;
+//         margin-top: -150px;
+//       }
+//     .swiper-slide {
+//     background-position: center;
+//     background-size: cover;
+//     }
+//     .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     }
+// }
+
+
+
+.banner-five{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 50px;
+    img{
+        width: 100%;
+        @media #{$small-mobile} {
+            height: fit-content;
+        }
+    }
+    .over-link{
+        background: linear-gradient(358deg, #4a00e6cf 22.74%, #ffffff00 100%);
+        z-index: 1;
+    }   
+    p{
+        &.disc{
+            color: #fff;
+        }
+    }
+    .banner-swiper-one-inner{
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        z-index: 3;
+        a{
+            .title{
+                background: linear-gradient(96.11deg, #4200E5 1.74%, #8200E9 100%);
+                max-width: max-content;
+            }
+        }
+    }
+}

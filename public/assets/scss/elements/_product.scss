@@ -1,0 +1,292 @@
+/*---------------------------
+All Product Style 
+*****************************/
+
+// isotop style explore
+
+.collectors-bg-shape{
+    background-image: url(../images/bg/bg-shape/bg-shape04.png);
+}
+
+.explore_bg-shape{
+    position: relative;
+    z-index: 2;
+    background-image: url(../images/bg/bg-image-1.jpg);
+
+}
+
+.bg_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.filter-explore{
+    .filters-button-group{
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+        button{
+            margin: 0 20px;
+            max-width: max-content;
+            color: #fff;
+            font-size: 24px;
+            &.is-checked{
+                color: #90FF03;
+            }
+        }
+    }
+    .element-item{
+        width: 31%;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        float: left;
+        @media only screen and (max-width: 1399px) {
+            width: 46%;
+        }
+        @media #{$md-layout} {
+            width: 45%;
+        }
+        @media #{$sm-layout} {
+            width: 100%;
+        }
+        @media #{$large-mobile} {
+            margin-left: 0;
+        }
+        @media #{$small-mobile} {
+            margin-left: 0;
+        }
+        .trending-items_wrapper{
+            margin: 0;
+        }
+    }
+}
+
+
+
+.explore-isotop-two{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../images/product/bg/isotop/isotop-02.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 754px;
+        width: 754px;
+        right: 6%;
+        bottom: 0%;
+        z-index: -1;
+    }
+    .title-area{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                background-image: url(../images/product/bg/isotop/isotop-01.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 674px;
+                width: 674px;
+                left: -36%;
+                top: -100%;
+                z-index: -1;
+            }
+        }
+    .filters-button-group{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        @media #{$smlg-device} {
+            margin-top: -15px;
+        }
+        @media #{$md-layout} {
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+        @media #{$sm-layout} {
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+        button{
+            background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, #ffffff66 0%, #ffffff00 100%);
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid var(--color-border-one);
+            margin-right: 15px;
+            font-size: 17px;
+            color: #fff;
+            min-width: fit-content;
+            max-width: max-content;
+            @media #{$smlg-device} {
+                margin-bottom: 15px;
+            }
+            @media #{$large-mobile} {
+                margin-bottom: 15px;
+            }
+            @media #{$small-mobile} {
+                margin-bottom: 15px;
+            }
+            &.is-checked{
+                background: var(--color-terciary);
+                color: #000;
+                border: 2px solid transparent;
+            }
+        }
+    }
+
+    &.explore-isotop-three{
+        .filters-button-group{
+            justify-content: center;
+            button{
+                max-width: max-content;
+                margin-right: 20px;
+                padding: 13px 20px;
+                &.is-checked{
+                    background: var(--gradient-one);
+                    color: #fff;
+                    border: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+.shop-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        margin-bottom: 0;
+        color: #fff;
+    }
+    .nice-select{
+        background: #fff1;
+        padding: 4px 39px;
+        height: auto;
+        line-height: auto;
+        &::after{
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+        &:focus{
+            border: 1px solid #fff;
+        }
+        .current{
+            color: #fff;
+        }
+        .list{
+            background: #fff1;
+            li{
+                color: #fff;
+                &:hover{
+                    background: #111d5e;
+                    color: #fff;
+                }
+                &[data-display="Select"]{
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.trending-items_wrapper {
+    &.shop{
+        margin: 0;
+    }
+}
+
+
+
+.iso-expo-one{
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        background: linear-gradient(96.11deg, #8200E9 1.74%, #4200E5 100%);
+        height: 310px;
+        width: 310px;
+        top: 7%;
+        left: 10%;
+        opacity: 1;
+        background-repeat: no-repeat;
+        z-index: -1;
+        filter: blur(180px);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background: linear-gradient(96.11deg, #8200E9 1.74%, #4200E5 100%);
+        height: 310px;
+        width: 310px;
+        right: 7%;
+        bottom: 10%;
+        opacity: .5;
+        background-repeat: no-repeat;
+        z-index: 0;
+        filter: blur(123px);
+    }
+}
+
+
+
+// product style explore over image
+
+
+.explore-over-image{
+    position: relative;
+    padding: 7px;
+    background: rgba(255, 255, 255, 0.082);
+    max-width: max-content;
+    border-radius: 5px;
+    &:hover{
+        a{
+            img{
+                transform: scale(1.15);
+            }
+        }
+    }
+    a{
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            transition: .5s;
+        }
+    }
+    .inner-content{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background: #fff1;
+        backdrop-filter: blur(10px);
+        padding: 15px 20px;
+        border-radius: 5px;
+        .left{
+            p{
+                margin-bottom: 10px;
+            }
+            .title{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

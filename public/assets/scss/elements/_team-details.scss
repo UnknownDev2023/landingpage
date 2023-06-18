@@ -1,0 +1,39 @@
+/*Team Details style Hear*/
+
+.team-details-wrapper{
+    .sub-title{
+        &.su-sub{
+            color: var(--color-terciary);
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    p{
+        &.disc{
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    .team-share-wrapper{
+        .social-wrapper{
+            li{
+                a{
+                    transition: .3s;
+                    &:hover{
+                        color: var(--gradient-one);
+                        transform: translateY(-5px);
+                        &::after{
+                            background: #fff !important;
+                        }
+                        i{
+                            color:Blue;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
